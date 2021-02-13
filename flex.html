@@ -1,0 +1,161 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://kit.fontawesome.com/b74b0d1f60.js" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+<header class="masthead">
+
+    <div class="centered">
+  
+      
+
+<div class="site-branding">
+    <h1 class="site-title">flexbox</h1>
+</div>
+     </div>
+</header>
+
+<main class="main-area">
+<div class="centered">
+<section class="menu-section">
+    <h2 class="menu-heading">Simple Menu</h2>
+    <nav class="single-nav menu">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Testimonials</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</section>
+
+<!--advanced flex box menu-->
+<section class="menu-section">
+<h2 class="menu-heading">advanced menu</h2>
+<nav class="advanced-nav menu">
+<ul>
+<li>
+<a href="#">
+<div class="icon">
+<i class="fas fa-futbol"></i>
+</div>
+<div class="text">football<span>is a great sport</span></div>
+</a>
+</li>
+<li>
+    <a href="#">
+    <div class="icon">
+    <i class="fas fa-camera"></i>
+    </div>
+    <div class="text">camera<span>captures great moment</span></div>
+    </a>
+    </li>
+    
+<li>
+    <a href="#">
+    <div class="icon">
+    <i class="fas fa-film"></i>
+    </div>
+    <div class="text">movie<span>makes your life better</span>
+    </div>
+    </a>
+    </li>
+    
+
+</ul>
+</nav>
+</section>
+</div>
+
+</main>
+ </body>    
+</html>
+
+
+<style>
+@media screen and (min-width: 600px)
+{
+    .advanced-nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .advanced-nav ul li{
+        flex-grow: 1;
+        flex-basis: 220px;
+        flex-shrink: 0;
+    }
+    .advanced-nav ul li a{
+     display: flex;
+    }
+
+    .advanced-nav ul li a .icon{
+      
+        flex-basis: 60px;
+        font-size: 35px;
+    }
+    .advanced-nav ul li a .text{
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .advanced-nav ul li a .text span{
+      display: block;
+      font-size: 15px;
+      font-weight: lighter;
+      font-style: italic;
+  }
+
+  
+}
+.menu-section{
+padding-bottom: 2em;
+margin-bottom: 2em;
+}
+.menu ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+background-color: #dcdde1;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #353b48;
+    padding: 0.6em 1em;
+    display: block; 
+    transition: all 0.5s ease;  
+}
+.menu li a:hover{
+    background-color: #f5f6fa;
+}
+.menu-heading{
+    font-size: 2em;
+    font-weight:100;
+}
+
+@media screen and (min-width: 600px)
+{
+    .single-nav ul{
+        display: flex;
+justify-content:flex-end;  
+flex-wrap: wrap;     
+text-align: center; 
+    }
+    .single-nav ul li{
+        flex-grow: 1;
+flex-basis: auto;  
+flex-shrink: 0;      
+    }
+
+    .single-nav ul li a{
+ display: flex;     
+    }
+
+
+}   
+
+</style>
